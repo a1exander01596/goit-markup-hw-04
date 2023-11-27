@@ -166,7 +166,7 @@ img {
   display: block;
   bottom: -1px;
   height: 4px;
-  background-color: #404bbf;
+  color: #404bbf;
   border-radius: 2px;
 }
 
@@ -449,11 +449,11 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .logo-content-footer {
   margin-right: 120px;
-  align-items: baseline;
 }
 
 .footer-text {
