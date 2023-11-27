@@ -380,11 +380,6 @@ img {
 
 .our-portfolio-list-title {
   margin-bottom: 8px;
-  padding-left: 16px;
-}
-
-.our-portfolio-list-text {
-  padding-left: 16px;
 }
 
 .our-portfolio-list-item {
@@ -443,6 +438,14 @@ img {
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+}
+
+.logo-content-footer {
+  margin-right: 120px;
+}
+
 .footer-text {
   color: #f4f4fd;
   font-size: 16px;
@@ -473,6 +476,31 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #f4f4fd;
+}
+
+.social-media-text {
+  color: var(--WHITE, #fff);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.social-list-link-footer {
+  display: block;
+  line-height: 0;
+  padding: 12px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-list-link-footer:focus,
+.social-list-link-footer:hover {
+  background-color: #31d0aa;
 }
 
 /* /FOOTER */
