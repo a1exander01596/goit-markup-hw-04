@@ -97,6 +97,8 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-navigation-container {
@@ -147,7 +149,7 @@ img {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
 }
 
@@ -156,7 +158,7 @@ img {
   color: #404bbf;
 }
 
-.menu-link::after {
+.studio-link::after {
   content: "";
   position: absolute;
   left: 0;
@@ -187,7 +189,7 @@ img {
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:hover,
@@ -207,6 +209,10 @@ img {
     url("../images/bg-foto.jpg");
   background-size: cover;
   padding: 188px 0;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .order-btn {
@@ -226,7 +232,7 @@ img {
   border-radius: 4px;
   background: var(--IRIS, #4d5ae5);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-btn:hover,
@@ -329,18 +335,21 @@ img {
 
 .social-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
+  justify-content: center;
 }
 
 .social-list-link {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 0;
   padding: 12px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link:hover,
@@ -349,7 +358,7 @@ img {
 }
 
 .icon {
-  fill: none;
+  fill: #f4f4fd;
 }
 
 /* /OUR TEAM */
@@ -444,6 +453,7 @@ img {
 
 .logo-content-footer {
   margin-right: 120px;
+  align-items: baseline;
 }
 
 .footer-text {
@@ -487,15 +497,22 @@ img {
   margin-bottom: 16px;
 }
 
+.social-list-footer {
+  display: flex;
+  gap: 16px;
+}
+
 .social-list-link-footer {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   line-height: 0;
   padding: 12px;
   border-radius: 50%;
   width: 40px;
   height: 40px;
   background-color: #4d5ae5;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-link-footer:focus,
